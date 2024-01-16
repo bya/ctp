@@ -1,10 +1,10 @@
+import * as React from 'react';
 import Sheet from '@mui/joy/Sheet';
+import Box from '@mui/joy/Box';
 import HeroSide01 from '@/blocks/HeroSide';
+import Typography from '@mui/joy/Typography';
 
-
-
-
-export default function Home() {
+export default function Register() {
   return (
     <Sheet
       sx={{
@@ -17,7 +17,7 @@ export default function Home() {
     >
       
         
-        <HeroSide01 />
+        <Typography level="h1" color="primary" fontSize="lg" fontWeight="xl">Register</Typography>
       
    
     </Sheet>
