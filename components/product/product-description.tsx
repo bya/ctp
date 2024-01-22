@@ -7,6 +7,7 @@ import { styled } from '@mui/joy/styles';
 import Grid from '@mui/joy/Grid';
 import Sheet from '@mui/joy/Sheet';
 import Box from "@mui/joy/Box";
+import { VariantSelector } from "./variant-selector";
 
 const Item = styled(Sheet)(({ theme }) => ({
     backgroundColor:
@@ -32,6 +33,9 @@ export function ProductDescription({ product }: { product: Product }) {
                     amount={product.priceRange.maxVariantPrice.amount}
                     currencyCode={product.priceRange.maxVariantPrice.currencyCode}
                 />
+            </Box>
+            <Box sx={{ mb: 2 }}>
+                <VariantSelector options={product.options} variants={product.variants} />
             </Box>
         </Item>
     )

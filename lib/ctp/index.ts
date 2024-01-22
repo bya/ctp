@@ -30,7 +30,74 @@ export function getProducts ({
         amount: row["FG VS"],
         currencyCode: "USD"
       }
-    }
+    },
+    variants: [
+      {
+        id: "1",
+        title: "FG VS",
+        availableForSale: true,
+        selectedOptions: [
+          {
+            name: "title",
+            value: "FG VS"
+          }
+        ],
+        price: {
+          amount: row["FG VS"],
+          currencyCode: "USD"
+        }
+      },
+      {
+        id: "2",
+        title: "FG IF-VVS",
+        availableForSale: true,
+        selectedOptions: [
+          {
+            name: "title",
+            value: "FG IF-VVS"
+          }
+        ],
+        price: {
+          amount: row["FG IF-VVS"],
+          currencyCode: "USD"
+        }
+      },
+      {
+        id: "3",
+        title: "DE VS",
+        availableForSale: true,
+        selectedOptions: [
+          {
+            name: "title",
+            value: "DE VS"
+          }
+        ],
+        price: {
+          amount: row["DE VS"],
+          currencyCode: "USD"
+        }
+      },
+      {
+        id: "4",
+        title: "DE IF-VVS",
+        availableForSale: true,
+        selectedOptions: [
+          {
+            name: "title",
+            value: "DE IF-VVS"
+          }
+        ],
+        price: {
+          amount: row["DE IF-VVS"],
+          currencyCode: "USD"
+        }
+      },
+    ],
+    options: [{
+      id: 1,
+      name: "color",
+      values: ["FG VS", "FG IF-VVS", "DE VS", "DE IF-VVS"]
+    }]
   })) || [];
 
 
