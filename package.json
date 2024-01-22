@@ -33,6 +33,8 @@
     "react": "latest",
     "react-dom": "latest",
     "sanity": "3",
+    "sanity-plugin-media": "^2.2.5",
+    "slugify": "^1.6.6",
     "stripe": "^14.12.0",
     "styled-components": "6",
     "zod": "^3.22.4"
