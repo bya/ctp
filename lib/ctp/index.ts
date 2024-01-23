@@ -94,7 +94,7 @@ export function getProducts ({
       },
     ],
     options: [{
-      id: 1,
+      id: "1",
       name: "color",
       values: ["FG VS", "FG IF-VVS", "DE VS", "DE IF-VVS"]
     }]
